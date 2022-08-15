@@ -7,13 +7,10 @@ body {
     font-size: 13pt;
     background-color: #efefef;
     padding: 10px;
-    margin: 0 20%;
+    margin: 0 15%;
     display: grid;
-    /*adicionado 4 colunas em fraçoes (fr)*/
-    grid-template-columns: 1fr 2fr 1fr;
-    /*adicionado 4 linhas em fraçoes (fr)*/
+    grid-template-columns: 1fr 2fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /*Desafio 2*/
     gap: 1px 20px;
 }
 .section h3 {
@@ -80,6 +77,9 @@ p {
     text-align: right;
     margin-top: 10px;
 }
+#table {
+    grid-column: span 2;
+}
 table {
     width: 100%;
 }
@@ -116,8 +116,11 @@ progress::-moz-progress-bar {
 }
 iframe, audio {
     display: block;
-    margin: 0 auto;
+    margin: auto;
     border: 3px solid #3fb6b2;
+}
+#video {
+    grid-column: span 3;
 }
 hr {
     border: 0;
